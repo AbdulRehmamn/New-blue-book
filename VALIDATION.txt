@@ -1,0 +1,51 @@
+VALIDATION: EXPORT / LAYOUT RECOVERY UPDATE
+
+test_browser_page_already_open_is_reused (test_recovery.BrowserFailureTests.test_browser_page_already_open_is_reused) ... ok
+test_manual_access_uses_page_content_without_old_403_status (test_recovery.BrowserFailureTests.test_manual_access_uses_page_content_without_old_403_status) ... ok
+test_navigation_timeout_keeps_usable_document (test_recovery.BrowserFailureTests.test_navigation_timeout_keeps_usable_document) ... ok
+test_persistent_block_needs_normal_browser_access (test_recovery.BrowserFailureTests.test_persistent_block_needs_normal_browser_access) ... ok
+test_rate_limit_cools_down_then_retries_once (test_recovery.BrowserFailureTests.test_rate_limit_cools_down_then_retries_once) ... ok
+test_stop_interrupts_rate_limit_cooldown (test_recovery.BrowserFailureTests.test_stop_interrupts_rate_limit_cooldown) ... ok
+test_cached_layout_failure_can_be_reextracted_offline (test_recovery.RecoveryTests.test_cached_layout_failure_can_be_reextracted_offline) ... ok
+test_company_without_h1_from_styled_name (test_recovery.RecoveryTests.test_company_without_h1_from_styled_name) ... ok
+test_company_without_heading_from_metadata (test_recovery.RecoveryTests.test_company_without_heading_from_metadata) ... ok
+test_export_request_while_running_is_honored_at_checkpoint (test_recovery.RecoveryTests.test_export_request_while_running_is_honored_at_checkpoint) ... ok
+test_listing_cannot_downgrade_profile_details (test_recovery.RecoveryTests.test_listing_cannot_downgrade_profile_details) ... ok
+test_listing_details_scoped_to_each_company (test_recovery.RecoveryTests.test_listing_details_scoped_to_each_company) ... ok
+test_listing_records_survive_all_profile_pages_blocked (test_recovery.RecoveryTests.test_listing_records_survive_all_profile_pages_blocked) ... ok
+test_locked_csv_does_not_prevent_current_excel_export (test_recovery.RecoveryTests.test_locked_csv_does_not_prevent_current_excel_export) ... ok
+test_no_fake_company_from_challenge_metadata (test_recovery.RecoveryTests.test_no_fake_company_from_challenge_metadata) ... ok
+test_retry_refreshes_completed_listing_and_reprocesses_failed_profiles (test_recovery.RecoveryTests.test_retry_refreshes_completed_listing_and_reprocesses_failed_profiles) ... ok
+test_schema_organization_without_h1 (test_recovery.RecoveryTests.test_schema_organization_without_h1) ... ok
+test_zero_export_shows_summary_and_all_queued_urls (test_recovery.RecoveryTests.test_zero_export_shows_summary_and_all_queued_urls) ... ok
+test_every_page_option_exports_before_job_finishes (test_scraper.CrawlTests.test_every_page_option_exports_before_job_finishes) ... ok
+test_session_limit_preserves_remaining_queue (test_scraper.CrawlTests.test_session_limit_preserves_remaining_queue) ... ok
+test_stop_at_500_of_1000_exports_partial_data_and_can_resume (test_scraper.CrawlTests.test_stop_at_500_of_1000_exports_partial_data_and_can_resume) ... ok
+test_stop_during_website_check_preserves_collected_emails (test_scraper.CrawlTests.test_stop_during_website_check_preserves_collected_emails) ... ok
+test_stop_while_paused_still_exports_previous_contacts (test_scraper.CrawlTests.test_stop_while_paused_still_exports_previous_contacts) ... ok
+test_three_page_crawl_and_completed_job_resume (test_scraper.CrawlTests.test_three_page_crawl_and_completed_job_resume) ... ok
+test_canonical_and_public_urls (test_scraper.ExtractionTests.test_canonical_and_public_urls) ... ok
+test_gated_page_is_not_a_company (test_scraper.ExtractionTests.test_gated_page_is_not_a_company) ... ok
+test_names_phones_emails_remain_associated (test_scraper.ExtractionTests.test_names_phones_emails_remain_associated) ... ok
+test_no_invented_pagination (test_scraper.ExtractionTests.test_no_invented_pagination) ... ok
+test_pagination_preserves_filters_and_nav (test_scraper.ExtractionTests.test_pagination_preserves_filters_and_nav) ... ok
+test_schema_person (test_scraper.ExtractionTests.test_schema_person) ... ok
+test_unpublished_is_blank_not_guessed (test_scraper.ExtractionTests.test_unpublished_is_blank_not_guessed) ... ok
+test_vendor_numbers_and_email_assets_excluded (test_scraper.ExtractionTests.test_vendor_numbers_and_email_assets_excluded) ... ok
+test_open_excel_workbook_gets_a_readable_alternate_export (test_scraper.PersistenceTests.test_open_excel_workbook_gets_a_readable_alternate_export) ... ok
+test_resume_deduplication_and_atomic_exports (test_scraper.PersistenceTests.test_resume_deduplication_and_atomic_exports) ... ok
+test_separate_jobs_and_same_job_resume (test_scraper.PersistenceTests.test_separate_jobs_and_same_job_resume) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 2.641s
+
+OK
+
+Additional checks:
+- Python source compilation passed.
+- Supplied SQLite database passed integrity_check; all 149 queue URLs retained.
+- Supplied workbook regenerated with Summary, Contacts and complete Pages audit.
+- Supplied job still contains zero companies; no contacts invented.
+- Live Blue Book page retrieval returned HTTP 403.
+- Playwright Chromium download unavailable in this environment; real browser / Windows setup was not run.
+- Private browser profile omitted from distribution; copy source files into existing installation to retain the local session.

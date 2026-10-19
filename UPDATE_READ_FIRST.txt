@@ -1,0 +1,7 @@
+ONE PREFERRED PHONE PER COMPANY
+
+Priority: 1. Published owner/executive contact number, separate from the main number and not shared with other named contacts. 2. Number explicitly labeled Mobile/Cell by the source (not carrier-verified). 3. Main company number. If only another published contact number exists, use that. Fax numbers are excluded. Companies without a usable number retain a blank phone.
+
+Only the selected number is exported. Duplicate selected numbers are combined, including across companies, to avoid repeated dialing. The original collected data remains in progress.sqlite3.
+
+Run start.bat. To apply this selection to existing saved data, click Export saved data and select the old job folder containing progress.sqlite3. No re-scraping required.
